@@ -1,5 +1,5 @@
 <HTML>
-<HEAD><TITLE> EJ refuerzo </TITLE></HEAD>
+<HEAD><TITLE> EJ1refuerzo </TITLE></HEAD>
 <BODY>
 
 <?php
