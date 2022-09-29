@@ -33,7 +33,7 @@ foreach ($impares as $pos){
 
 }
 $suma = 0;
-$nroelementos = count($impares)/2;
+$nroelementos = count($impares);
 $i=0; 
 while ( $i < $nroelementos ){
 	$suma = $suma + $impares[$i];
@@ -43,6 +43,8 @@ $promedio = $suma / $nroelementos;
 
 echo $promedio;
 
+
+?>
 
 ?>
 </BODY>
