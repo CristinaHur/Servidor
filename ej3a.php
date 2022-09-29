@@ -3,7 +3,7 @@
 <BODY>
 <?php
 $binarios = array();
-$aux = 1;
+$aux = 0;
 
 
 for ( $i=0;$i < 20; $i++){
@@ -20,13 +20,13 @@ echo "
     <th>Octal</th>
   </tr>";
 
-$cont = 0;
-foreach ($binarios as $bin){
-$bin=decbin($cont);
-$oct=decoct($cont);
+
+foreach ($binarios as $numbin){
+$bin=decbin($numbin);
+$oct=decoct($numbin);
 
  	echo "<tr>
-    <td>".$cont."</td>
+    <td>".$numbin."</td>
     <td>".$bin."</td>
     <td>".$oct."</td>
   	</tr>";
