@@ -1,5 +1,5 @@
 <HTML>
-<HEAD><TITLE> EJ1-Conversion IP Decimal a Binario </TITLE></HEAD>
+<HEAD><TITLE> EJ1-Arrays unidimensionales </TITLE></HEAD>
 <BODY>
 <?php
 $impares = array();
