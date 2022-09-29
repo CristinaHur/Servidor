@@ -23,7 +23,7 @@ echo "
 $cont = 0;
 foreach ($binarios as $bin){
 $bin=decbin($cont);
-$oct=decoct($bin);
+$oct=decoct($cont);
 
  	echo "<tr>
     <td>".$cont."</td>
