@@ -1,5 +1,5 @@
 <HTML>
-    <HEAD> <TITLE> DAR DE ALTA DEPARTAMENTOS </TITLE>
+    <HEAD> <TITLE> DAR DE ALTA CATEGORIAS </TITLE>
     <link href="css.css" rel="stylesheet" type="text/css" />
     </HEAD>
     <BODY>
