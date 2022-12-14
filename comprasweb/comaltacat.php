@@ -41,10 +41,10 @@ $cat=["nombre"];
    $codigo = ( $consulta + 1);
    // $sql="INSERT INTO categoria (id_categoria) VALUES (`C$codigo`)";
     $consulta1 = $conn->prepare("INSERT INTO categoria (id_categoria) VALUES (:codigo)");
-    $stmt->bindParam(':codigo', `C`.$codigo);
-    $stmt->execute();
+    $consulta1->bindParam(':codigo', `C`.$codigo);
+    $consulta1->execute();
     
-    if(!$consulta){die('Error');}
+    if(!$consulta1){die('Error');}
     
         $stmt = $conn->prepare("INSERT INTO categoria (nombre) VALUES (:nombre)");
         $stmt->bindParam(':nombre', $cat);
