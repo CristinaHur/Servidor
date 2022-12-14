@@ -35,10 +35,14 @@ $cat=["nombre"];
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $consulta = mysqli_query($conn,'SELECT MAX(id_categoria) as id FROM categoria LIMIT 1');
+    $consulta = mysqli_query($conn,"SELECT MAX(id_categoria) as id FROM categoria LIMIT 1");
     //$consulta = mysqli_fetch_array($consulta,MYSQL_ASSOC);
     $codigo = (empty($consulta['id']) ?  : $consulta['id']+=1);
-    $consulta = mysqli_query($conn,'INSERT INTO categoria (id_categoria) VALUES ('."C".$codigo.')');
+   // $sql="INSERT INTO categoria (id_categoria) VALUES (`C$codigo`)";
+    $consulta1 = $conn->prepare("INSERT INTO categoria (id_categoria) VALUES (:codigo)");
+    $stmt->bindParam(':codigo', `C`.$codigo);
+    $stmt->execute();
+    
     if(!$consulta){die('Error');}
     
         $stmt = $conn->prepare("INSERT INTO categoria (nombre) VALUES (:nombre)");
