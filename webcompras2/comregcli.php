@@ -20,7 +20,7 @@ $sql1 = "SELECT nif FROM `cliente`";
      
     }
     else { 
-            $sql = "INSERT INTO clientes (nif,nombre,apellido,cp,direccion,ciudad) VALUES ('$usuario','$password')"; 
+            $sql = "INSERT INTO clientes (nif,nombre,apellido,cp,direccion,ciudad) VALUES  ($nifnie,$nombre,$apellido,$codigoP,$direcc,$ciu) "; 
             //mysql_query($sql); 
             $sql->execute();
         }
