@@ -4,7 +4,7 @@
 
 require_once "conexion.php";
 FUNCTION registro(){
-$nifnie=$_SERVER['nif'];
+$nifnie=$_POST['nif'];
 $nombre= $_POST['nombre'];
 $apellido=$_POST['apellido'];
 $codigoP=$_POST['cp'];
